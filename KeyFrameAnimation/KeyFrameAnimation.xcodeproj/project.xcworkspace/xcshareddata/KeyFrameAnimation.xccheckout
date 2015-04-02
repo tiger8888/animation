@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>94DFA338-4332-4155-8511-0C8FE940AE7A</string>
+	<string>8EE3F1F0-3377-49F8-84DD-5C17AF99D2BE</string>
 	<key>IDESourceControlProjectName</key>
-	<string>basicMoveAnimation</string>
+	<string>KeyFrameAnimation</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>9196FBB5D06A1991A7032AED1A0F0E51E7BDAECC</key>
 		<string>https://github.com/sbxIOS/animation.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>basicMoveAnimation/basicMoveAnimation.xcodeproj</string>
+	<string>KeyFrameAnimation/KeyFrameAnimation.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9196FBB5D06A1991A7032AED1A0F0E51E7BDAECC</key>
