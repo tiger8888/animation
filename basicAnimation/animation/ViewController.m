@@ -33,7 +33,7 @@
     UIImage* image = [UIImage imageNamed:@"tank"];
     tank = [[UIImageView alloc]initWithImage:image];
     tank.backgroundColor = [UIColor blackColor];
-    tank.center = CGPointMake(10 + image.size.width/2, self.label3.frame.origin.y + self.label3.frame.size.height + 10 + image.size.height/2);
+    tank.center = CGPointMake(0, self.label3.frame.origin.y + self.label3.frame.size.height + 10 + image.size.height/2);
     tank.image = image;
     [self.view addSubview:tank];
     
@@ -42,7 +42,7 @@
      */
     CABasicAnimation *animation = [CABasicAnimation animation];
     animation.keyPath = @"position.x";
-    animation.fromValue = @10;
+    animation.fromValue = @0;
     animation.toValue = @455;
     animation.duration = 10.f;
      /**
@@ -63,7 +63,7 @@
      * 显示 presentation layer 的位置
      */
     CALayer *layer = [tank.layer presentationLayer];
-    NSString* text = [NSString stringWithFormat:@"presentation layer [%f,%f,%f,%f]",layer.frame.origin.x,layer.frame.origin.y,layer.frame.size.width,layer.frame.size.height];
+    NSString* text = [NSString stringWithFormat:@"layer.presentationLayer[%f,%f]",layer.frame.origin.x,layer.frame.origin.y];
     self.label1.text = text;
     [self.label1 setNeedsDisplay];
     
@@ -71,7 +71,7 @@
      * 显示 model layer 的位置
      */
     layer = [tank.layer modelLayer];
-    text = [NSString stringWithFormat:@"model layer [%f,%f,%f,%f]",layer.frame.origin.x,layer.frame.origin.y,layer.frame.size.width,layer.frame.size.height];
+    text = [NSString stringWithFormat:@"layer.modelLayer[%f,%f]",layer.frame.origin.x,layer.frame.origin.y];
     self.label2.text = text;
     [self.label2 setNeedsDisplay];
     
@@ -79,7 +79,7 @@
      * 显示 view 的位置
      */
     layer = tank.layer;
-    text = [NSString stringWithFormat:@"frame [%f,%f,%f,%f]",layer.frame.origin.x,layer.frame.origin.y,layer.frame.size.width,layer.frame.size.height];
+    text = [NSString stringWithFormat:@"view.frame[%f,%f]",layer.frame.origin.x,layer.frame.origin.y];
     self.label3.text = text;
     [self.label3 setNeedsDisplay];
 }
